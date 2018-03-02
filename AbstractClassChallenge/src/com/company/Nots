@@ -1,0 +1,54 @@
+Create an abstract class to define items that can be stored in a list
+
+-the class should contain 2 references to items which will represent the (next) and (previous) item( in the case of a linked list)
+I.e., if your call your abstract class ListItem, then it would have 2 member variables of type ListItem that will hold references to the next/right and previous/left
+ListItems.
+
+
+-the abstract class will also need to hold a value - try to be as flexible as possilbe when defining the type of this value
+
+-the class will also neeed methods to move to the next item and back to the previous item, and mehtods to set the next and previous items
+
+-you should also specifiy a compareTo() mehtod that takes a parameter of the same type as the class and returns 0 if the values are equal, greater than zero if the value sorts
+greater than the parameter and less than zero if it sorts less than the parameter
+
+-create a concrete class form your abstract list item class and use this in a LInkedList class to implement
+a linked list that will add items in order (so that the are sorted alphabetically). Duplicate values are not added.
+
+-Note that you are creating your own LinkedList calss here, not using the built-in Java one...
+
+-the rules for adding an item to the linked list are:
+If the head of the list is null, make the head refer to thte item to be added.
+If the item to be added is less than the current item in the list, add the item before the current  item (i.e.., make the previous item's "next" refer to the
+new item, and the new item's "next" refer to the current item).
+If the item to be added is greater than the current item, move onto the next item and compare again (if there is no next item then that is where the new item belons).
+
+
+-Care will be needed when inserting before the frist item in the list (as it iwll not hae previous item).
+
+-you will also need a method to remove an item form the list
+
+-Hint: if you are creating classes with names such as List, LinkedList, Node etc, make sure you create your classes before referring to them. In previous videos
+we have often referred to classes that we create later, but if you use names that Intellij recognises as Java classes (such as LinkedList)
+then it will create imports for them and possibly cause you problems later .
+
+Optional: crate a clas to user your conrete class to implement a Binary search Tree: When adding items to a Binary
+Search Tree, if the item to be added is less than the current item then move to the left, if it is greater than the current item then move to the rigt.
+
+
+The new item is added when an attemt to move in the required direction would involve following a null reference.
+
+Once again, duplicates are not allowed
+
+Hint: to avoid typing loads of "addItem" lines, split a string inot an array an dcreate your list in a loop as in the example below
+
+
+Create a string data array to avoid typing loads of addItem instructions:
+
+String stringData="Darwin Brisbine Perth Melbourne Adelaide Sydney";
+
+String []data=stringData.split(" ");
+
+for (String s: data){
+//crete new item with value set to the string s
+}

@@ -1,0 +1,11 @@
+
+//modify the playlist challenge so that the album class uses an inner class
+
+//instead of using an ArrayList to hold its tracks, it will use an inner class called SongList
+//the inner SongList class will use an ArrayList and will provide a method to ad a song
+
+//it will also provide findSong() methods which will be used by the contaiing album class
+
+// to add songs to the playlist
+
+//neither the Song class or the Main class should be changed.

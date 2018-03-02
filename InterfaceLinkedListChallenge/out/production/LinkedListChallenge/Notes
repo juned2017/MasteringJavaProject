@@ -1,0 +1,24 @@
+
+
+
+create a program that implements a playlist for songs
+
+create a Song class having Title and Duration for a song
+
+The program will have an Album class containing list of songs
+
+The album will be stored in an ArrayList
+
+--Songs from different albums can be added to the playlist and will appear in the list in the order they are added
+-playlist is linkedlist
+once the songs have been added to the playist, create a menu of options to: quit, skip, forward to the next song, skip backwards to previo9us song. Replay the ucrrent song.
+
+List the songs in the playlist
+
+A song must exist in an album before it can be added to the playlist (so you can only play songs that you own
+
+Hint: to replay a song , consider what happend when we went back and forth from a city before we started trackingthe direction we were going
+
+as an optional extra, provie an option to remove the current song form the playlkist
+
+hint listiterator.remove()
