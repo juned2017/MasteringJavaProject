@@ -87,7 +87,7 @@ public class Team<T extends Player> implements Comparable<Team<T>>{ //(T) indica
     @Override
     public int compareTo(Team<T> team) {
         if(this.ranking()>team.ranking()){ //(this.ranking) is the current team ranking that is saved in this class
-            return -1; //this current data for the particular theam is higner so return -1
+            return -1; //this current data for the particular team is higner so return -1
         }else if(this.ranking()<team.ranking()){
             return 1;
         }else{

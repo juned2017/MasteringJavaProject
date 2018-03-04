@@ -44,6 +44,6 @@ public class Main {
         System.out.println("Ranking for Baseball Teams");
         System.out.println(newYorkJetz.getName() + " " + newYorkJetz.ranking());
 
-        System.out.println(patriots.compareTo(steeler));
+        System.out.println("-----------"+ patriots.compareTo(steeler));
     }
 }
