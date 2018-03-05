@@ -3,15 +3,14 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import com.example.game.ISaveable;
+import com.example.game.Monster;
+import com.example.game.Players;
+
+
+//creating my own library
 
 public class Main {
-
-
-    //crated a library out of this project and added that libarry to PackageGame project// se that for more reference
-    // to turn it into a libaryr , click build, artificat, then buil, save it in Documents for example
-
-    //to add a (libary) to a project, go to file, project structure, libary , then press the plus sign , java, and then find the where u saved the file (Document) for example, click the
-    //exact file and follow the instruction .
 
     public static void main(String[] args) {
 
